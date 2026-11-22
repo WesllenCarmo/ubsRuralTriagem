@@ -34,8 +34,10 @@ def adicionarPacienteNasListas():
 
     if paciente[1] >= 60 or paciente[2] == "gestante":
         fila_prioritaria.append(paciente)
+        print(f"{paciente[0]} entrou na fila prioritária")
     else:
         fila_comum.append(paciente)
+        print(f"{paciente[0]} entrou na fila comum")
         
 # - Função chamar pacientes na lista de prioridade primeiro, senão, chama fila comum. 
 #   Se não tiver ninguém nas listas, não chama ninguém.
